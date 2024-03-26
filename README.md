@@ -64,10 +64,6 @@ git push --set-upstream origin developer-mrp
 > ## Routes Folder:
 > **The Routes folder will contain all the routes of the website from which the routes for different types of pages will be set.**
 
-> [!NOTE]
-> ## Update Daily Work For Frontend:
-> **Frontend Developers will regularly write a short description of completed tasks in this google doc.**
-> ### [Google Doc - Update regularly](https://docs.google.com/document/d/1OOEIk3z8Vy5nUripXva-mNy1INwYdh-SP94H8Y-x9Ss/edit?usp=sharing)
 
 
 ## CONTACT WITH ME:
