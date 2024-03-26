@@ -49,7 +49,7 @@ git push --set-upstream origin developer-mrp
 > **This folder will contain only reusable components, that can be used in multiple places** -->
 
 > [!NOTE]
-> ## Private route:
+> ## Accessibility permission:
 > **For the purpose of testing or visiting my site, i just skipped the user-private authentication and admin-private authentication as well so that a visitor can see or visit all pages and functionalities and get an valuable idea about my application.**
 
 > [!NOTE]
