@@ -1,22 +1,8 @@
 # READ THIS CAREFULLY BEFORE START YOUR CODING!!
 # [ITS OPTION - Live Link](https://its-option-2464a.web.app)
 
-### ITS Option is a confidential project for a client of [Md Mahfuz RP](https://mahfuzrp.netlify.app)
+### ITS Option is a confidential project for a client of [Md Kamrul Hasan](https://unrivaled-entremet-29faf8.netlify.app/)
 
-**WARNING: Don't share any code or related36452 information of this site. It's a very very confidential project!**
-
-## Contributor Installation for First Time
-1. Accept invitation for contribute on this project
-2. Clone the repository:
-```sh
-git clone https://github.com/mdmahfuzrp/its-option-client.git
-```
-
-## Install Package
-3. Install related package
-```sh
-npm install
-```
 
 ## Live Preview
 4. Run this command to see live site
@@ -25,21 +11,7 @@ npm install
 npm run dev
 ```
 
-## developer-rafi Branch
-5. Run this command to add something new in website
-**Before Edit Something EveryTime**
-```sh
-git pull origin development-testing
-```
-**After Edit Something EveryTime**
-```sh
-git branch -b developer-rafi 
-git add .
-git commit -m""
-git push --set-upstream origin developer-rafi
-```
-
-## developer-mrp Branch
+<!-- ## developer-mrp Branch
 6. Run this command to add something new
 **Before Edit Something EveryTime**
 ```sh
@@ -51,9 +23,9 @@ git branch -b developer-mrp
 git add .
 git commit -m""
 git push --set-upstream origin developer-mrp
-```
+``` -->
 
-## development Branch & main Branch
+<!-- ## development Branch & main Branch
 5. This branch only for project manager don't edit this
 
 ## Important Notice
@@ -62,7 +34,7 @@ git push --set-upstream origin developer-mrp
 # ITS OPTION - Folder Structure:
 > [!NOTE]
 > ## SharedComponent Folder:
-> **This folder will contain only reusable components, that can be used in multiple places**
+> **This folder will contain only reusable components, that can be used in multiple places** -->
 
 > [!NOTE]
 > ## Layout Folder:
