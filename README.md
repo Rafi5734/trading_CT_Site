@@ -5,10 +5,16 @@
 
 
 ## Live Preview
-4. Run this command to see live site
+Run this command to see live site
 
 ```sh
 npm run dev
+```
+## User Dashboard
+Copy the link in your browser.
+
+```sh
+https://trading-ct-site.vercel.app/user
 ```
 
 <!-- ## developer-mrp Branch
