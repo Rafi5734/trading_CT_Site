@@ -49,6 +49,10 @@ git push --set-upstream origin developer-mrp
 > **This folder will contain only reusable components, that can be used in multiple places** -->
 
 > [!NOTE]
+> ## Private route:
+> **For the purpose of testing or visiting my site, i just skipped the user-private authentication and admin-private authentication as well so that a visitor can see or visit all pages and functionalities and get an valuable idea about my application.**
+
+> [!NOTE]
 > ## Layout Folder:
 > **The website layout will be in this Layout folder and the MainWebsiteLayout folder in the Layout folder will contain the main website layout, the UserDashboardLayout will contain the user dashboard layout, the AdminDashboardLayout will contain the admin layout.**
 
