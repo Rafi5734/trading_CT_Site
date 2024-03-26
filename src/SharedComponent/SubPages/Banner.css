@@ -1,0 +1,36 @@
+#banner{
+    content: 'hhhhhhh';
+    background-image: url('../../assets/images/pagebg.jpg');
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#banner::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #0f0f0fbd;
+    left: 0;
+    top: 0;
+}
+#banner-waves{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#pageTitle{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+    padding: 0 25px;
+    border: 3px solid #289dcfc0;
+    border-radius: 50px;
+	backdrop-filter: blur(3px);
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}

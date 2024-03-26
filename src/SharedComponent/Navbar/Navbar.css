@@ -1,0 +1,101 @@
+#navigation{
+	position: sticky;
+	z-index: 10000;
+	top: 0;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+    margin-bottom: -100px;
+	z-index: 1200;
+}
+.scrolled{
+	background-color: #3132366e;
+	backdrop-filter: blur(8px);
+	transition: .3s ease-in-out;
+}
+nav a {
+	margin: 0 1rem;
+	text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+	color: white;
+    transition: .1s ease-in-out;
+}
+#get-started-btn{
+    border: 2px solid #289dcf;
+    transition: .1s ease-in-out;
+}
+#get-started-btn:hover{
+    border: 2px solid #289dcf;
+    background-color: transparent;
+}
+
+nav a:hover {
+    color: #289dcf;
+}
+
+header .nav-btn {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #289dcf;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		transition: .5s;
+        z-index: 10001;
+	}
+    
+    header nav::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #232323f1;
+    }
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 18px;
+	}
+}

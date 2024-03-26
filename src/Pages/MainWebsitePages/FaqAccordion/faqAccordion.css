@@ -1,0 +1,8 @@
+.accordion_btn{
+    transition: 0.4s;
+}
+.accordion_panel{
+    /* max-height: 0; */
+    overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

@@ -1,0 +1,460 @@
+.parent-opacity-animation {
+  overflow: hidden;
+}
+.opacity-animation {
+  /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+    transform: scale(0.8);*/
+  animation: pulse 2s infinite;
+  border-radius: 100%;
+  width: fit-content;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 #289dcf48;
+  }
+
+  70% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 60px #289dcf00;
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.subImgAnimation {
+  margin-top: 0;
+  opacity: 1;
+  animation: subImg 3s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes subImg {
+  0% {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  70% {
+    margin-top: -15px;
+    opacity: 0.8;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.titleStyle {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.subTitleStyle {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.titleStyle span {
+  color: #289dcf;
+}
+.subTitleStyle span {
+  color: #289dcf;
+  font-weight: 800;
+}
+.descriptionStyle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c8c99;
+}
+.cardDescriptionStyle {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c8c99;
+}
+.innerTitleStyle {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .titleStyle {
+    font-size: 28px;
+  }
+  .innerTitleStyle {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .titleStyle {
+    font-size: 30px;
+  }
+  .descriptionStyle {
+    font-size: 18px;
+  }
+  .innerTitleStyle {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleStyle {
+    font-size: 35px;
+  }
+
+  .innerTitleStyle {
+    font-size: 27px;
+    font-weight: 700;
+  }
+}
+
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+.icon,
+.icon_header {
+  margin-right: 5px;
+  font-size: 27px;
+}
+
+.close_icon {
+  color: white;
+  margin-top: 0;
+  margin-right: -20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.close_icon:hover {
+  color: #289dcf;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar main main main";
+}
+
+/* Default */
+.circle-left {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom, #289dcf33 40%, #289dcf7c 50%);
+  filter: blur(120px);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+/* Header  */
+.header {
+  grid-area: header;
+  height: 75px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-right: 20px;
+  background-color: rgb(17, 24, 39);
+  position: sticky;
+  right: 0;
+  top: -1px;
+  z-index: 1;
+}
+
+.menu-icon {
+  display: none;
+}
+/* End Header  */
+
+/* Sidebar  */
+#sidebar {
+  grid-area: sidebar;
+  width: 260px;
+  height: 100%;
+  background: linear-gradient(90deg, #11293b5e 0%, #16364e93 100%);
+  backdrop-filter: blur(10px);
+  border-right: 4px solid #289dcf;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: fixed;
+  z-index: 1000;
+}
+#admin-sidebar{
+  background: linear-gradient(90deg, #11293b5e 0%, #16364e93 100%);
+  backdrop-filter: blur(10px);
+  border-right: 4px solid #289dcf;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar-title > span {
+  display: none;
+}
+
+.sidebar-brand {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 10px 32px;
+  padding-right: 0;
+  font-size: 14px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-list-item:hover {
+  background-color: #289dcf2d;
+  cursor: pointer;
+}
+.sidebar-list-item > svg {
+  font-size: 16px;
+  color: #289dcf;
+}
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+  z-index: 12 !important;
+}
+
+/* End Sidebar  */
+
+/* Main  */
+.main-container {
+  grid-area: main;
+  padding: 0 20px;
+  padding-top: 0;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.95);
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 17px 0;
+}
+.apexcharts-toolbar{
+  display: none;
+  z-index: 0 !important;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.card:first-child {
+  background-color: #2962ff;
+}
+
+.card:nth-child(2) {
+  background-color: #ff6d00;
+}
+
+.card:nth-child(3) {
+  background-color: #2e7d32;
+}
+
+.card:nth-child(4) {
+  background-color: #d50000;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-inner > .card_icon {
+  font-size: 25px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+  height: 300px;
+}
+/* End Main  */
+
+/* User Ballance */
+.fortnite-btn {
+  background: linear-gradient(#344d6890, #304760);
+  font-family: "Luckiest Guy";
+  border-radius: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.fortnite-btn-inner {
+  background: linear-gradient(#289dcf98, #289dcf);
+  transform: skew(-5deg);
+  animation-name: ballance;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  color: yellow;
+}
+
+@keyframes ballance {
+  0% {
+    background: linear-gradient(#289dcf98, #289dcf);
+    color: yellow;
+  }
+  50% {
+    background: linear-gradient(#289dcf, #289dcf98);
+    color: #fff;
+  }
+  100% {
+    background: linear-gradient(#289dcf98, #289dcf);
+    color: yellow;
+  }
+}
+
+/* Large Device */
+@media screen and (min-width: 1150px) {
+  .main-container {
+    margin-top: 50px;
+  }
+}
+/* Medium <= 992px */
+
+@media screen and (max-width: 1150px) {
+  .main-container {
+    padding-top: 50px;
+  }
+  .header {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+  #total-money {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+}
+/* Small <= 768px */
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    margin-top: 0;
+  }
+  .main-container > div {
+    padding-top: 70px;
+  }
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }.subTitleStyle{
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .subTitleStyle span{
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+/* Extra Small <= 576px */
+
+@media screen and (max-width: 576px) {
+  .hedaer-left {
+    display: none;
+  }
+  .main-container {
+    margin-top: 0;
+  }
+  .main-container > div {
+    padding-top: 70px;
+  }
+  .subTitleStyle{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .subTitleStyle span{
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
