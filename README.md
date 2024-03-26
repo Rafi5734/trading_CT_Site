@@ -16,6 +16,12 @@ Copy the link in your browser.
 ```sh
 https://trading-ct-site.vercel.app/user
 ```
+## Admin Dashboard
+Copy the link in your browser.
+
+```sh
+https://trading-ct-site.vercel.app/admin-1615-ct
+```
 
 <!-- ## developer-mrp Branch
 6. Run this command to add something new
